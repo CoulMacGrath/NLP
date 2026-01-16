@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   jupyter:
-    image: jupyter/base-notebook:python-3.11
+    build: .
     container_name: notebook-viewer
     ports:
       - "8888:8888"
